@@ -61,9 +61,13 @@
 }
 
 /* Begin styling the report items here! */
+
+/* Adding background Color */
 .layout {
   background-color: #2A3035;
 }
+
+/* Styling Typographic Element */
 
 ul{
   padding-inline-start: 0;
@@ -78,6 +82,8 @@ h1,a {
 span{
   color: grey;
 }
+
+/*Styling Report Elements*/
 
 .reports {
   display: flex;
@@ -96,6 +102,8 @@ span{
   margin: 0;
   font-size: smaller;
 }
+
+/* Reducing report_item container width for smaller screens */
 
 @media (max-width: 768px) {
   .reports_item{
