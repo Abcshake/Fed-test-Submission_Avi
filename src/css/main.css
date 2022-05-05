@@ -55,10 +55,46 @@
 }
 .layout_header {
   margin-bottom: 30px;
+  height: auto;
   text-align: center;
+  background-color: black;
 }
 
 /* Begin styling the report items here! */
-.reports {
+.layout {
+  background-color: #2A3035;
+}
 
+h1,a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+span{
+  color: grey;
+}
+
+.reports {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reports_item{
+  width: calc(100%/3);
+  padding: 30px;
+}
+
+.reports_title{
+  background-color: black;
+  width: inherit;
+  margin: 0;
+  font-size: smaller;
+}
+
+@media (max-width: 768px) {
+  .reports_item{
+    width: calc(100%/2);
+  }
 }
